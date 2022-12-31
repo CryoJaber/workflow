@@ -13,54 +13,50 @@ class UsersController extends AppController
 {
 
 
-public function beforeFilter(EventInterface $event)
-{
-    $this->Authentication->allowUnauthenticated(['login', 'add']);
+    public function beforeFilter(EventInterface $event)
+    {
+         $this->Authentication->allowUnauthenticated(['login', 'add']);
 
-    parent::beforeFilter($event);
-}
+         parent::beforeFilter($event);
 
+    }
 
     public function login()
     {
         if ($this->request->is('post')) 
         {
-        
-	     if ($this->Auth->login()) 
-	     {
+            $result = $this->Authentication->getResult();
+
+            if ($this->Auth->login() && $result->isValid()) 
+            {
+    
                 // did they select the remember me checkbox?
                 if ($this->request->data['User']['remember_me'] == 1) 
                 {
+        
                     // remove "remember me checkbox"
                     unset($this->request->data['User']['remember_me']);
-                    // hash the user's password
-                    $this->request->data['User']['password'] = $this->Auth->password($this->request->data['User']['password']);
-                    // write the cookie
-                    $this->Cookie->write('remember_me_cookie', $this->request->data['User'], true, '2 weeks');
-                }
-                    return $this->redirect($this->Auth->redirect());
-             } 
-             else  
-             {
-                $this->Session->setFlash(_('Username or password is incorrect.'));
-             }
-        }
-        
-       $this->set(array
-       (
-            'title_for_layout' => 'Login'
-       ));
 
-    }
+	        }
+         
+               // hash the user's password
+               $this->request->data['User']['password'] = $this->Auth->password($this->request->data['User']['password']);
 
-    public function logout() 
-    {
-        // clear the cookie (if it exists) when logging out
-        $this->Cookie->delete('remember_me_cookie');
-        return $this->redirect($this->Auth->logout());
-    }
+               $target = $this->Authentication->getLoginRedirect() ?? '/Pages/Dashboard/';
 
+               return $this->redirect($target);
 
+           }
+     
+           if ($this->request->is('post') && !$result->isValid())
+           {
+               $result = $this->Authentication->getResult();
+               $this->Flash->error('Invalid username or password');
+           }
+     
+      }
+
+}
 
 
 
@@ -73,8 +69,8 @@ public function beforeFilter(EventInterface $event)
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
-    public function index()
-    {
+     public function index()
+     {
         $users = $this->paginate($this->Users);
 
         $this->set(compact('users'));
@@ -87,6 +83,7 @@ public function beforeFilter(EventInterface $event)
      * @return \Cake\Http\Response|null|void Renders view
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
+    
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
