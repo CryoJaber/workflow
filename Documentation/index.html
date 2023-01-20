@@ -1,0 +1,698 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Berse Joomla Template - Documentation 1.0</title>
+
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to post it on out forum here. Thanks so much!
+
+This documentation was made only with the Documenter (except the images)">
+	<meta name="author" content="themesoul">
+	<meta name="copyright" content="themesoul">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-02-18T00:00:00+01:00">
+
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/fonts/stylesheet.css" media="screen">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="js/jquery.js"></script>
+
+	<script>
+	jQuery(document).ready(function($){
+      //handle external links (new window)
+	  		$('a[data-toggle = tab]').bind('click',function(){
+	       	window.location.href = $(this).attr('href');
+    	});
+
+			 $( '.document_menu_sidebar' ).click ( function (){
+						$( '.document_menu_sidebar' ).removeClass ( 'active_bg' );
+						$( this ).addClass ( 'active_bg' );
+			 });
+ 	});
+
+</script>
+
+	<style>
+		html{background-color:#f4f4f4; color:#777777;}
+		::-moz-selection{background:#b1dbf9;color:#297ab4;}
+		::selection{background:#b1dbf9;color:#297ab4;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_12.png);}
+		a{color:#3c9ce2;}
+		.btn {
+			border-radius:3px;
+		}
+
+		hr{border-top:1px solid #e4e4e4; border-bottom:1px solid transparent;}
+	</style>
+
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="index.html" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li class="panel document_menu_sidebar active_bg"><a href="#documenter_cover">Start</a></li>
+			<li class="panel document_menu_sidebar"><a href="#sub_menu_intallation">Installation</a>
+				<ul id="sub_menu_installation" class="collapse">
+					<li class="sub-chapter"><a href="#installation_1" data-toggle="tab">Quickstart Installation</a></li>
+					<li class="sub-chapter"><a href="#installation_2" data-toggle="tab">Templates Installation</a></li>
+				</ul>
+			</li>
+			<li class="panel document_menu_sidebar"><a href="#header" data-toggle="collapse" data-parent="#documenter_nav">Header</a></li>
+			<li class="panel document_menu_sidebar"><a href="#sub_menu_menu">Navigation and Menu</a>
+				<ul id="sub_menu_menu" class="collapse">
+					<li class="sub-chapter"><a href="#menu_1" data-toggle="tab">Navigation</a></li>
+					<li class="sub-chapter"><a href="#menu_2" data-toggle="tab">Off-canvas</a></li>
+					<li class="sub-chapter"><a href="#menu_3" data-toggle="tab">Create, edit & delete menu</a></li>
+				</ul>
+			</li>
+			<li class="panel document_menu_sidebar"><a href="#sub_menu_slider">Slider Management</a>
+				<ul id="sub_menu_slider" class="collapse">
+					<li class="sub-chapter"><a href="#slider_1" data-toggle="tab">Main Setting</a></li>
+					<li class="sub-chapter"><a href="#slider_2" data-toggle="tab">Slides Editor</a></li>
+					<!--<li class="sub-chapter"><a href="#slider_3" data-toggle="tab">J2store module</a></li>-->
+				</ul>
+			</li>
+			<li class="panel document_menu_sidebar"><a href="#sub_menu_homepage">Homepage Management</a>
+				<ul id="sub_menu_homepage" class="collapse">
+					<li class="sub-chapter"><a href="#homepage_1" data-toggle="tab">Install SP Page Builder</a></li>
+					<li class="sub-chapter"><a href="#homepage_2" data-toggle="tab">About Us</a></li>
+					<li class="sub-chapter"><a href="#homepage_3" data-toggle="tab">Our Offer</a></li>
+					<li class="sub-chapter"><a href="#homepage_4" data-toggle="tab">Our Steps</a></li>
+					<li class="sub-chapter"><a href="#homepage_5" data-toggle="tab">Our Testimonial</a></li>
+					<li class="sub-chapter"><a href="#homepage_6" data-toggle="tab">Latest Blogs</a></li>
+				</ul>
+			</li>
+			<li class="panel document_menu_sidebar"><a href="#sub_menu_article">Article Management</a>
+				<ul id="sub_menu_article" class="collapse">
+					<li class="sub-chapter"><a href="#article_1" data-toggle="tab">Create, Edit, Delete</a></li>
+					<li class="sub-chapter"><a href="#article_2" data-toggle="tab">Upload Images</a></li>
+					<li class="sub-chapter"><a href="#article_3" data-toggle="tab">Project Pages</a></li>
+				</ul>
+			</li>
+			<!--<li class="panel document_menu_sidebar"><a href="#user">User Management</a></li>-->
+			<li class="panel document_menu_sidebar"><a href="#contact">Contact Detail</a></li>
+			<li class="panel document_menu_sidebar"><a href="#footer">Footer</a></li>
+			<!--<li class="panel document_menu_sidebar"><a href="#backup">Regular Back up</a></li>-->
+		</ul>
+		<div id="documenter_copyright">Copyright themesoul 2020<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+		<section id="documenter_cover"><h1>Berse Joomla Template<span>Documentation 1.0</span></h1><hr>
+			<ul>
+				<li>Created: May 20, 2021</li>
+				<li>latest Update: May 20, 2021</li>
+				<li>By: themesoul</li>
+			</ul>
+			<p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to <strong><a href="https://themeforest.net/user/themesonic">Messages Me</a></strong>. Thank you very much!
+
+	This documentation was made only with <a href="http://rxa.li/documenter">the Documenter</a> (except the images)</p>
+	</section>
+
+
+	<!-- Start Installation -->
+	<section id="installation_1">
+		<h2>1. Installation</h2>
+
+		<h3>1.1 Quickstart Installation</h3><hr class="notop">
+		<p>We are going to see the Quickstart installation methods both on the server and the localhost. So, let's get started.</p>
+
+		<h4>1.1.1 Quickstart installation on a localhost</h4>
+		<p>For localhost quickstart installation, you can use any local server software you want like MAMP, WAMP, XAMPP or others. Start the localhost software with the web (e.g. Apache/NGINX) and database (MySQL) servers inside it. The initial work is done.</p>
+		<ul>
+			<li><h5>Step 1: Copy the Quickstart pack to the localhost</h5>
+					<p>First copy the Quickstart zip file to the htdocs folder of the local server. Extract the Quickstart zip file there.</p>
+			</li>
+			<li><h5>Step 2: Start the installation by visiting the localhost address</h5>
+					<p>Now visit your localhost URL (address) on a browser. Ex: Localhost/YourFileName. A Joomla installation window tabbed as Configuration will appear. Then click next</p>
+					<img src="assets/images/quickstart-1.jpg" alt="quickstart" />
+			</li>
+			<li><h5>Step 3: Database Restoration</h5>
+					<p>Enter database server host name, usually with "localhost", then enter the username and password of the database. Now set a database name and click next.</p>
+					<img src="assets/images/quickstart-2.jpg" alt="quickstart" /><br/>
+					<p>Now you will see the database restoration is being processed on your screen</p>
+					<img src="assets/images/quickstart-3.jpg" alt="quickstart" />
+					<img src="assets/images/quickstart-4.jpg" alt="quickstart" />
+					<p>Once completed, you could continue by pressing next step button</p>
+			</li>
+			<li><h5>Step 4: Site Setting</h5><p>Enter your site name, email and most importantly, enter username and password. After that, click next. </p>
+					<img src="assets/images/quickstart-5.jpg" alt="quickstart" /><br/>
+					<p>Now remove the installation directory by pressing "remove installation directory" button</p>
+					<img src="assets/images/quickstart-6.jpg" alt="quickstart" />
+			</li>
+			<li><h5>Step 5: Done</h5><p>Now go to localhost/YourFileName/administrator to access Joomla and your installed template. Or you can click the administrator button to directly access it.</p>
+			</li>
+		</ul>
+		<p>&nbsp;</p>
+		<h4>1.1.2 Quickstart installation on a server with cpanel</h4>
+		<p>To install the Quickstart pack on a web server, you need to upload the the package/extracted files to the server. In order to transfer files to the web server from your computer, you can use an FTP client for example: Filezilla. Now unzip the Quickstart pack. You will get several files and folders. </p>
+		<ul>
+			<li><h5>Step 1: Upload the Quickstart pack to the server</h5>
+					<p>If you use cPanel, you can directly upload the Quickstart zip file to the server to the public_html directory of your web server. Then you can unzip it there.</p>
+					<img src="assets/images/quickstart-server-1.jpg" alt="quickstart" />
+			</li>
+			<li><h5>Step 2: Create a new database and a database user</h5>
+					<p>Create a MySQL database user and a database on your web server. You will need to enter these (username, password and the database name) in the ‘Database Configuration’ step while installing the Quickstart pack.</p>
+			</li>
+			<li><h5>Step 3 : Start the installation by visiting your website address/IP </h5>
+				<p>Open your browser and navigate to your domain (i.e. http://mydomain.com) or depending on where you have uploaded the Joomla installation package. You will see the initial installation page (the Configuration tab). <strong>Now follow the installation process you have just experienced for localhost we’ve explained above.</strong></p>
+			</li>
+		</ul>
+	</section>
+
+	<section id="installation_2">
+		<h2>1. Installation</h2>
+
+		<h3>1.2 Templates Installation</h3><hr class="notop">
+		<ul>
+			<li><h5>Step 1: Login to administrator</h5>
+					<p>First of all you have to login to your Joomla control panel using your username and password.</p>
+			</li>
+			<li><h5>Step 2: Go to extensions</h5>
+					<p>Click extensions. On the top of the drop-down menu, click “Manage” and then select “Install”.</p>
+					<img src="assets/images/templates-1.jpg" alt="templates" />
+			</li>
+			<li><h5>Step 3: Upload File </h5>
+					<p>On the Install page, select the option “Upload Package File”. Upload your template installation file using the drag-and-drop method or clicking the file browsing button. Joomla will automatically install the template upon completing the upload.</p>
+					<img src="assets/images/templates-2.jpg" alt="templates" /><br/>
+			</li>
+			<li><h5>Step 4: Set as default</h5>
+					<p>Set Berse templates as the default template for all the pages of your site (that’s the entire website) by going to Extensions > Templates > Styles > click the star button.</p>
+					<img src="assets/images/templates-3.jpg" alt="templates" />
+			</li>
+		</ul>
+	</section>
+	<!-- End Installation -->
+
+	<!-- Start Header -->
+	<section id="header">
+		<h2>2. Header Customization</h2>
+
+		<h3>2.1 Top Bar (Homepage 2)</h3><hr class="notop">
+		<h5>2.1.1 Get a Quote Button</h5>
+		<ol>
+			<li>Go to extensions > Modules</li>
+			<li>Go to Get a Quote Button</li>
+			<li>Place it on "menu-right" position</li>
+			<li>then Save</li>
+		</ol>
+		<h5>2.1.2 Email, Phone & Office Hour</h5>
+		<ol>
+			<li>Similar to explained above steps, Go to extensions > templates</li>
+			<li>Click Berse</li>
+			<li>Template Extensions</li>
+			<li>Choose Basic</li>
+			<li>Click Contact Info</li>
+			<li>then you could fill your email and your phone number</li>
+			<li>then Save</li>
+		</ol>
+
+		<h3>2.2 Logo Setting</h3><hr class="notop">
+		<p>Here you can set/upload a logo for your site. You can adjust the logo height as well. Also, you get an option to upload your own logo image and a dedicated mobile logo, in the format: PNG, GIF, JPG or SVG, with these simple following steps :</p>
+		<ol>
+			<li>Similar to explained above steps, Go to extensions > templates</li>
+			<li>Click Berse</li>
+			<li>Template Extensions</li>
+			<li>Choose Basic</li>
+			<li>Click logo</li>
+			<li>On logo type you could choose image or text logo format</li>
+			<li>Upload your logo by clicking select media on logo field</li>
+			<li>Adjust logo height at logo height option</li>
+			<li>then Save</li>
+		</ol>
+
+		<!--<h3>2.3 Search, cart, and login modules</h3><hr class="notop">
+		<p class="info">To manage this three modules, make sure to be in extension > modules</p>
+		<ul>
+			<li><h5>Search Modules</h5>
+					<p>place it on <strong>search</strong> position</p>
+			</li>
+			<li><h5>Cart Modules</h5>
+					<p>place it on <strong>menu-right</strong> position</p>
+			</li>
+			<li><h5>Login Modules</h5>
+					<p>Berse use <strong>mod_login_socialnetworks</strong> modules to have integrated facebook login. place it on <strong>menu-right</strong> position</p>
+			</li>
+		</ul>-->
+		<h3>2.3 Sticky Header</h3><hr class="notop">
+		<img src="assets/images/sticky-header.jpg" alt="Sticky" />
+		<ol>
+			<li>Similar to explained above steps, Go to extensions > templates</li>
+			<li>Click Berse</li>
+			<li>Template Extensions</li>
+			<li>Choose Header</li>
+			<li>Decide whether the header will be sticky or no</li>
+			<li>then Save</li>
+		</ol>
+	</section>
+	<!-- End Header -->
+
+
+	<!-- Start Navigation -->
+	<section id="menu_1">
+	<h2>3. Navigation and Menu</h2>
+	<h3>3.1 Navigation</h3><hr class="notop">
+	<p>This is a general settings for MegaMenu which is allowing you to choose the menu from available in your Joomla. in each template, by default, you can choose only one menu used for MegaMenu.</p>
+	<img src="assets/images/mainnavigation-1.jpg" alt="Main Menu" />
+	<ol>
+		<li>Go to extensions > templates</li>
+		<li>Click Berse</li>
+		<li>Template Extensions</li>
+		<li>Choose Navigation</li>
+		<li>Select the menu source</li>
+		<li>Select the menu type, whether Mega Menu only, Mega Menu & Off-canvas or off-canvas only</li>
+		<li>Define the dropdown width</li>
+		<li>Select the dropdown animation</li>
+		<li>then Save</li>
+	</ol>
+	</section>
+
+	<section id="menu_2">
+	<h2>3. Navigation and Menu</h2>
+	<h3>3.2 Off-canvas</h3><hr class="notop">
+	<p>Off-Canvas [=] is indeed an external menu module, built-in in Helix Ultimate framework. Mostly, It's used in Mobile and Tablets view. To disable Off-Canvas menu from desktop view only, just simply select "Mega Menu" only.</p>
+	<p>To use menu module on off-canvas, follow these steps below</p>
+	<ol>
+		<li>Go to extensions > modules</li>
+		<li>Add new menu module</li>
+		<li>Select Menu from the list which should be used, it doesn't have to be always "main menu"</li>
+		<li>Place it to "offcanvas" module position</li>
+		<li>Set Menu Assignment > Module Assignment : On all pages</li>
+		<li>Make sure to set status to Published</li>
+		<li>then Save</li>
+	</ol>
+	</section>
+
+	<section id="menu_3">
+	<h2>3. Navigation and Menu</h2>
+	<h3>3.3 Create, edit & delete menu item</h3><hr class="notop">
+	<p class="info">to create edit and delete menu item, make sure to be in Menus > sites (hidden menu, main menu or in user menu) </p>
+	<h4>3.3.1 Create new menu item</h4>
+	<p>The following tutorial will show you how to create a new item in the main menu that points to the article or any other menu type. Based on this information you will be able to add a new menu item to any of your defined menus pointing to any article you have previously created for your site</p>
+	<p>for example we would like to have new menu item on main menu, just simply following this below steps</p>
+	<ol>
+		<li>Go to menus > main menu > add new menu item</li>
+		<li>Fill the menu title, and leave blank the alias, it will be automatically filled after saved </li>
+		<li><p>Click on the Select list for Menu Item Type.</p><img src="assets/images/mainnavigation-2.jpg" alt="Main Menu" /></li>
+		<li>From the list displayed
+				<ul>
+					<li>choose <strong>Articles > blog</strong>. To show articles belonging to a specific Category in a blog layout</li>
+					<li>choose <strong>Articles > Single article</strong>. To show a full-displayed article</li>
+					<li>choose <strong>contact > single contact</strong>. To point the menu to your contact</li>
+					<!--<li>choose <strong>j2store > Product list view</strong>. To show your products in one or many categories</li>-->
+				</ul>
+				<p>And complete any paramaters associated with the selected Menu Item Type.</p>
+		</li>
+		<li>Confirm the Menu and Parent Item are set correctly for your site.</li>
+		<li>Make sure to set status to Published</li>
+		<li>Go to page title option to Enable Page Title</li>
+		<li>Click Save & Close</li>
+	</ol>
+
+	<h4>3.3.2 Edit menu item</h4>
+	<p>To edit existing menu item, you just click its title and do any change, afterwards just simply save and close</p>
+
+	<h4>3.3.1 Delete menu item</h4>
+	<p>To delete existing menu item, place a checkmark in the box to the left of the names of the menu items you wish to unpublish/delete, then you just simply click the unpublish/trash button</p>
+	</section>
+	<!-- End Navigation -->
+
+
+	<!-- Start Sldier -->
+	<section id="slider_1">
+		<h2>3. Slider Management</h2>
+		<p class="info">This feature could be access from Component > Unite Slider</p>
+		<h3>3.1 Unite Slider Main Setting</h3><hr class="notop">
+		<p>Once you created a slider, you can open the slider settings any time to manage any general settings per slider</p>
+		<img src="assets/images/slider-1.jpg" alt="Unite Slider" />
+		<img src="assets/images/slider-2.jpg" alt="Unite Slider" />
+		<ul>
+		 <li><strong>Slider Title</strong> : A Internal used Name for the Slider. Only for Backend Usage</li>
+		 <li><strong>Slider Alias</strong> : An individual name of the slider. Dont use Speical chars and spaces here. This will be used for ShortCode embeding and for any other art for embeding and corresponding / link internal to the slider.</li>
+		 <li><strong>Slider Layouts</strong> : there are options Fixed, custom, AutoResponsive and Fullscreen. For Berse purposes, we use Fullscreen with these settings bellow :
+			 <ul>
+				 <li>unlimited height : off</li>
+				 <li>Force Full Width : On</li>
+				 <li>Min height : 250</li>
+				 <li>Grid Width : 1370</li>
+				 <li>Grid Height : 680</li>
+			 </ul>
+		 </li>
+	 	</ul>
+	</section>
+
+	<section id="slider_2">
+		<h2>3. Slider Management</h2>
+		<p class="info">This feature could be access from Component > Unite Slider</p>
+		<h3>3.2 Slides Editor</h3><hr class="notop">
+		<p>To access slide editor, please go to to </p>
+		<ul>
+		 <li>Component > Unite Slider</li>
+		 <li>Click edit Slides</li>
+		 <li>Click edit slide on one of existing slide items, if you want to edit existing slide items</li>
+		 <li>Click New Slide, if you want to add new slide</li>
+		</ul>
+	</section>
+
+	<section id="slider_3">
+		<h2>3. Slider Management</h2>
+		<p class="info">This feature could be access from Component > Unite Slider</p>
+		<h3>3.3 J2store module as Slider</h3><hr class="notop">
+		<p>To access slide modules: </p>
+		<ul>
+		 <li>Please go to extensions > modules</li>
+		 <li>Find module type <strong>J2Store Products display</strong></li>
+		 <li>On Module tab. Set Sub templates > Carousel_slider, define your product sources, and complete the rest paramaters associated with the selected product sources</li>
+		 <li>On layout setting tab, set number of columns : 1, number of items at least : 1</li>
+		 <li>Make sure this modules is set to "Published"</li>
+		 <li>Save & close</li>
+		 <li>The final step is, load this module through sp page builder addon.</li>
+		</ul>
+	</section>
+	<!-- End Slider -->
+
+
+
+	<section id="homepage_1">
+		<h2>4. Homepage Management</h2>
+		<p class="info">To manage the homepage easily, you need to have installed SP Page builder</p>
+		<p>SP Page Builder is so powerful that you can create a website's whole structuralization with it. You can create your page layouts with generated addons and arranging them in a way you want. Sp Page builder poses amazing ease of accesses like add new row, Page creation and edit, Built-in page templates, addon listing, access to frontend editor, preview options, and much more exciting stuff.</p>
+		<p><img src="assets/images/sp-page-builder-home.jpg" alt="Main Menu" /></p>
+		<h3>4.1 SP Page Builder Installation</h3><hr class="notop">
+		<p>How to Install SP Page Builder, follow these steps to install SP Page Builder</p>
+		<ol>
+		 <li><strong>Login to your Joomla backend</strong><br/>
+			 First, you have to log in to your Joomla admin dashboard using the username and password. The URL to access the administrator page is: www.yourdomain/administrator.
+		 </li>
+		 <li><strong>Extension Install</strong><br/>
+			 Now go to Extensions>>Install. <br/>
+			 <img src="assets/images/sppb-installation-1.jpg" alt="Main Menu" />
+		 </li>
+		 <li><strong>File Upload</strong><br/>
+			 Now you have to upload the installation file. You can drag and drop the file or use the "browse for file" button to add the file
+		 </li>
+		 <li><strong>First Look of SP Page Builder</strong><br/>
+			 You will find SP Page Builder on the top in the admin menu.
+			 <img src="assets/images/sppb-installation-2.jpg" alt="Main Menu" />
+		 </li>
+	 </ol>
+	</section>
+
+	<section id="homepage_2">
+		<h2>4. Homepage Management</h2>
+		<p class="info">To manage the homepage easily, you need to go to SP Page Builder > Pages > Home</p>
+		<h3>4.2 About Us</h3><hr class="notop">
+		<p><strong>Follow these steps below to manage this section</strong> :</p>
+		<ol>
+			<li>Create/add new Row</li>
+			<li>Generate custom column : 7 + 5</li>
+			<li>On first column, add an image addon with these following setting :
+					<ul>
+						<li><strong>Admin label</strong> : You should name the admin label by keeping the relevance to the purpose of the addon you have added. This will surely save you from a lot of hassles.</li>
+						<li><strong>Title</strong> : This option will allow you to add a title to the title. The purpose of the title is to express the naming of the section you just added to the addon. If you want to add the title, you just have to add it in the title text box, it will be automatically added to the addon section.</li>
+						<li><strong>Select Image</strong> : You can upload and select the images here.</li>
+						<li><strong>Style :</strong>use margin = 0px 0px 0px -60px</li>
+					</ul>
+			</li>
+			<li>On second column, add two text block addon and one button addon :
+					<ul>
+						<li><strong>About Us</strong> Title. <br/>
+												HTML element : H3, Font family : Rajdhani, Letter spacing : 3px; Title color: #1c5aae, Title font size: 20px.</li>
+						<li><strong>HITEK stands for Workshop for Industrial Equipment</strong> <br/>
+												HTML element : H1, Title font size: 40px, Title margin top: 10, Title margin bottom: 40, content : place your content here</li>
+						<li><strong>Read More Button</strong><br/>
+												Button Text : Read More, and leave the other fields with the default setting</li>
+					</ul>
+			</li>
+			<li>Jangan lupa klik apply setiap melakukan perubahan pada setiap add-on</li>
+			<li>Selanjutnya klik save</li>
+		</ol>
+	</section>
+
+	<section id="homepage_3">
+		<h2>4. Homepage Management</h2>
+		<p class="info">To manage the homepage easily, you need to go to SP Page Builder > Pages > Home</p>
+		<h3>4.3 Our Offer</h3><hr class="notop">
+		<p><strong>Follow these steps below to manage this section</strong> :</p>
+		<ol>
+			<li>Create/add new Row</li>
+			<li>Choose single column</li>
+			<li>Go to row option > Style > padding : 0px 0px 150px 0px and select the background image here </li>
+			<li>Go to column option, and set the margin to -550px 0px 0px 0px</li>
+			<li>Now, Create nested row through column option panel > add new row</li>
+			<li>Generate custom column : <strong>5+7+12+6+6</strong></li>
+			<li>On 5 column, add two text block addon with these following setting :
+				<ul>
+					<li><strong>Our Offer</strong> Text <br/>
+											HTML element : H3, Font family : Rajdhani, Letter spacing : 3px; Title color: #1c5aae, Title font size: 20px.</li>
+					<li><strong>Products and Services</strong> Text <br/>
+											HTML element : H2, Title font size: 68px, Title Line height: 68px; Title margin top: 20.<br/>
+											Style tab > Margin : 0px 0px 30px 0px</li>
+				</ul>
+			</li>
+			<li>On 7 column, add one text block addon with these following setting :
+				<ul>
+					<li><strong>Section Description</strong> Text <br/>
+											Content : place your content here</li>
+				</ul>
+			</li>
+			<li>On 12 column, add empty space addon with these following setting :
+				<ul>
+					<li><strong>Empty Space gap : </strong> 70</li>
+				</ul>
+			</li>
+			<li>On first 6 column, add two feature box addon with these following setting :
+					<ul>
+						<li><strong>Special Purposes Machine Equipment</strong><br/>
+												HTML element : H3, Font family : Rajdhani, Icon/Image Position : Before title, Title font size: 36px, URL Will Be Used For : Both, Layout Type: image, Feature Box Image : then select your image here </li>
+						<li><strong>Technical training.</strong> <br/>
+												HTML element : H3, Font family : Rajdhani, Icon/Image Position : Before title, Title font size: 24px, URL Will Be Used For : Both, Layout Type: image, Feature Box Image : then select your image here </li>
+					</ul>
+			</li>
+			<li>On the last 6 column, add more two feature box addon with these following setting :
+					<ul>
+						<li><strong>Automation Robotic & Smart Factory</strong><br/>
+												HTML element : H3, Font family : Rajdhani, Icon/Image Position : Before title, Title font size: 24px, URL Will Be Used For : Both, Layout Type: image, Feature Box Image : then select your image here
+												<br/>Style option with margin : 110px 0px 30px 0px;</li>
+						<li><strong>Other Services</strong><br/>
+												HTML element : H3, Font family : Rajdhani, Icon/Image Position : Before title, Title font size: 36px, URL Will Be Used For : Both, Layout Type: image, Feature Box Image : then select your image here</li>
+					</ul>
+			</li>
+			<li>then click save</li>
+		</ol>
+	</section>
+
+	<section id="homepage_4">
+		<h2>4. Homepage Management</h2>
+		<p class="info">To manage the homepage easily, you need to go to SP Page Builder > Pages > Home</p>
+		<h3>4.4 Our Steps</h3><hr class="notop">
+		<p><strong>Follow these steps below to manage this section</strong> :</p>
+		<ol>
+			<li>Create/add new Row</li>
+			<li>Generate custom column : <strong>5+7</strong></li>
+			<li>Go to row option > General > CSS Class : <strong>white-text</strong></li>
+			<li>On 5 column, add two text block addon and one button addon :
+					<ul>
+						<li><strong>Our Steps</strong> Title. <br/>
+												HTML element : H3; Font family : Rajdhani; Letter spacing : 3px; Title font size: 20px; title margin top: 60; title margin bottom: 20;.</li>
+						<li><strong>Engineering & Manufacturing Development Phase</strong> <br/>
+												HTML element : H2; Title font size: 40px; Title margin bottom: 30;</li>
+						<li><strong>Develop with us Button</strong><br/>
+												Button Text : Develop with us; Button Icon: Fa-envelope</li>
+					</ul>
+			</li>
+			<li>On 7 column, add an accordion addon with these following setting :
+				<ul>
+					<li>Accordion Style : Default</li>
+					<li>Open Item : Open first item</li>
+					<li>Accordion Items : You could add your item here</li>
+				</ul>
+			</li>
+			<li>then click save</li>
+
+		</ol>
+	</section>
+
+	<section id="homepage_5">
+		<h2>4. Homepage Management</h2>
+		<p class="info">To manage the homepage easily, you need to go to SP Page Builder > Pages > Home</p>
+		<h3>4.5 Testimonial</h3><hr class="notop">
+		<p><strong>Follow these steps below to manage this section</strong> :</p>
+		<ol>
+			<li>Create/add new Row</li>
+			<li>Generate custom column : <strong>5+7</strong></li>
+			<li>Go to row option > Style > padding: 80px 0px 100px 0px; and add the background image here</li>
+			<li>On 5 column, add two text block addon and one testimonial addon :
+					<ul>
+						<li><strong>Testimonial</strong> Title. <br/>
+												HTML element : H3; Font family : Rajdhani; Letter spacing : 3px; Title font size: 20px; Title color: #1c5aae; title margin top: 60; title margin bottom: 20; </li>
+						<li><strong>We have clients in over 25 countries</strong> <br/>
+												HTML element : H2; Title font size: 40px; Title margin bottom: 30;</li>
+						<li><strong>Testimonial addon</strong><br/>
+												Client Review : Place your testimonial here; Content font size: 28; content font family: georgia; Content line height: 40; Content color: #aaa; content margin: 30px 0px 50px 0px; Client Name: John Doe; Company color: #1853a2;</li>
+					</ul>
+			</li>
+			<li>On 7 column, you could simply leave blank </li>
+			<li>then click save</li>
+		</ol>
+	</section>
+
+	<section id="homepage_6">
+		<h2>4. Homepage Management</h2>
+		<p class="info">To manage the homepage easily, you need to go to SP Page Builder > Pages > Home</p>
+		<h3>4.6 Latest Blogs</h3><hr class="notop">
+		<p><strong>Follow these steps below to manage this section</strong> :</p>
+		<ol>
+			<li>Create/add new Row</li>
+			<li>Choose one column</li>
+			<li>Go to row option > Style > padding: 100px 0px 120px 0px</li>
+			<li>On this column, add two text block addon and joomla module addon :
+					<ul>
+						<li><strong>Latest blogs</strong> Title. <br/>
+												HTML element : H3; Font family : Rajdhani; Letter spacing : 3px; Title font size: 20px; Title color: #1c5aae; title margin top: 60; title margin bottom: 20; </li>
+						<li><strong>Be Smart With Us</strong> <br/>
+												HTML element : H2; Title font size: 48px; Title margin bottom: 30;</li>
+						<li><strong>Joomla Module</strong><br/>
+												Type : Module; Module: Minifrontpage;<br/>
+											 	Style > Margin : 40px 0px 0px 0px;</li>
+					</ul>
+			</li>
+			<li>Then Save</li>
+		</ol>
+	</section>
+
+<!-- Start Article Management -->
+<section id="article_1">
+	<h2>5. Article Manager</h2>
+	<p>Articles in Joomla are your website's content pages. Articles can be linked to the Joomla menu system, or you can create hyper-links to other articles, within the article content itself.</p>
+	<h3>5.1 Create, Edit, dan delete article</h3><hr class="notop">
+	<h4>5.1.1 Create New Article</h4>
+	<p>To add a new article, navigate to the back end of the site and perform one of these actions: Select content > article > add new article from the drop-down menus in the Administration Panel</p>
+	<p>You will be presented with a content editor, depending on what you have selected as the default editor e.g. TinyMCE or JCE.</p>
+	</ul>
+
+	<h4>5.1.2 Edit Article</h4>
+	<p>To Edit an existing article, in Article Manager click on an Article's Title or click the Article's check box and then click the <strong>Edit</strong> button in the Toolbar.</p>
+
+	<h4>5.1.3 Delete Article</h4>
+	<p>To Delete an existing article, in Article Manager click on an Article's Title or click the Article's check box and then click the <strong>trash</strong> button in the Toolbar.</p>
+</section>
+
+<section id="article_2">
+	<h2>5. Article Manager</h2>
+
+ <h3>5.2 Upload image in article</h3><hr class="notop">
+ <p>Uploading image in article could be performed with these action : </p>
+ <ol>
+	 <li><strong>image on intro article</strong> :<br/>
+ 		<ul>
+ 		 <li>While on editor, go to "Image and Links"<br/>
+  		 		 <img src="assets/images/artikel-2.jpg" alt="Artikel" /><br/>
+  		 <li>Choose an image and the position for the intro image</li>
+ 	 </ul>
+ 	</li>
+	<li><strong>Image on full article</strong> :<br/>
+		<ul>
+		 <li>While on editor, navigate to icon image :<br/>
+ 		 		 <img src="assets/images/artikel-1.jpg" alt="Artikel" /><br/>
+ 		 <li>pick the image</li>
+		 <li>define the iamge position with "image float" option</li>
+		 <li>Click Insert</li>
+	 </ul>
+	</li>
+ </ol>
+</section>
+
+<section id="article_3">
+	<h2>5. Article Manager</h2>
+
+ <h3>5.3 Project Page</h3><hr class="notop">
+ <p>Creating an article for project page can be adding using similar methods with <a href="#article_1">default joomla article</a>. But while on editor, there should be an extra tab generated from custom field to collect and display extra information regarding the project. After creating some project's articles, follow this steps to generate project page </p>
+ <ol>
+	 <li>Use the similatr method to create new menu</li>
+	 <li>Go to Page Display tab</li>
+	 <li>On page class field, use <strong>overlay-blog project</strong> class</li>
+	 <li>Then save this menu and try to access it from the frontend</li>
+ </ol>
+</section>
+
+<section id="article_4">
+	<h2>5. Article Manager</h2>
+	<p class="info">Untuk menambah, mengubah dan menghapus CURRENT PROJECT, pastikan untuk berada di halaman <strong>Content > Articles </strong></p>
+
+ <h3>5.4 Current Project</h3><hr class="notop">
+ <p>Mengelola konten Current Project sama dengan cara mengelola <a href="#article_3">Projet Experience List</a>, bedanya hanya di langkah ke-6 dan ke-7 </p>
+ <ol>
+	 <li>Klik New</li>
+	 <li><strong>LANGSUNG</strong> ke category dan tentukan kategorinya ke kategory project</li>
+	 <li>Ketikkan artikel di bagian textarea yang telah dilengkapi dengan WYSIWYG editor. <br/>
+		   <p class=warning>Hindari copy paste langsung dari text editor seperti MS. Word ataupun OpenOffice</p></li>
+	 <li>Kemudian klik tab <strong>projects</strong> dan isikan informasi yang diperlukan<br/><img src="assets/images/custom-field.jpg" alt="custom field" /></li>
+	 <li>Pastikan status artikel telah terpublished</li>
+	 <li>Pastikan <strong>Access</strong> artikel diset ke <strong>Registered</strong>. Ketika project telah selesai, access ini bisa disetting ke publick</li>
+	 <li>Pastikan <strong>Featured</strong> artikel diset ke <strong>Yes</strong>. Ketika project ini selesai, Featured harus disetting ke NO</li>
+	 <li>Isikan tags jika diperlukan, hal ini bisa dimanfaatkan agar ada keterkaitan dengan project lain yang memiliki tags yang serupa. Misalnya diberi tags oil and gas, agar ketika di halaman services oil and gas project-project dengan tagging oil and gas akan muncul</li>
+	 <li>Klik save</li>
+ </ol>
+</section>
+
+<!-- End Article Management -->
+
+<section id="user">
+	<h2>6. Manajemen Pengguna</h2>
+	<p class="info">Untuk mengelola pengguna, harus masuk ke menu Users > manage. Dalam website ini, setiap rekanan yang registrasi di website harus mendapat persetujuan dari admin website.</p>
+	<p>Fitur ini sangat berguna untuk bagi rekanan, agar bisa memantau progress projectnya yang disetting secara private untuk konsumsi umum. Berikut cara mengelolanya</p>
+	<ol>
+		<li>Masuk ke menu Users > manges</li>
+		<li>Di kolom activation, User yang baru mendaftar akan ditandai dengan tanda silang. Klik tanda silang tersebut hingga menjadi tanda centang, maka user yang baru mendaftar tadi akan langsung aktif dan bisa memantau progress projectnya yang sedang dikerjakan oleh PT. HTSI di menu current project </li>
+	</ol>
+</section>
+
+
+<section id="contact">
+	<h2>8. Contact Detail</h2>
+
+	<h3>8.1 How to update contact datail</h3><hr class="notop">
+	<ol>
+		<li>Go to ke <strong>Compoenents > Contacts</strong></li>
+		<li>Click Contact Us, and adjust the details<br/>
+			<img src="assets/images/kontak.jpg" alt="kontak" />
+		</li>
+	</ol>
+</section>
+
+<section id="footer">
+	<h2>7. Footer</h2>
+
+	<p>To change footer</p>
+	<ul>
+		<li>Go to extension > module </li>
+		<li>Find Bottom Module which is positioned on bottom1 </li>
+	</ul>
+	<br/>
+	<p>To change the social icon and copyright</p>
+	<ul>
+		<li>Go to extension > template > berse > template options > basic > social icon</li>
+		<li>Then change on these fields facebook, twitter, youtube, dan instagram</li>
+		<li>Then to change the copyright, you go to extension > template > berse > template options > basic > footer > Copyright</li>
+	</ul>
+
+
+</section>
+
+<section id="backup">
+	<h2>8. Backup </h2>
+	<p class="info">Dimohon untuk melakukan backup secara rutin, minimal sebulan sekali, untuk meminimalisir sesuatu yang tidak diinginkan </p>
+	<p>Fitur backup bisa diakses melalui <strong>Components > Akeeba Backup > backup Now</strong>. Selanjutnya, Hasil proses backupnya bisa dilihat di <strong>Components > Akeeba Backup > Manage Backups</strong></p>
+	<p class="warning">Tidak disarankan untuk merubah-rubah settingan di fitur back up ini kecuali yang telah disebutkan diatas</p>
+</section>
+
+	</div>
+</body>
+</html>

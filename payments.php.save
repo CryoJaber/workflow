@@ -1,0 +1,67 @@
+<?php
+
+
+require "vendor/autoload.php";
+
+use QuickBooksOnline\Payments\PaymentClient;
+use QuickBooksOnline\Payments\Operations\ChargeOperations;
+
+
+$client = new PaymentClient([
+  'access_token' => "your access token",
+  'environment' => "sandbox" //  or 'environment' => "production"
+]);
+
+$payment_amount = $_POST["payment_amount"];
+$card_name = $_POST["card_name"];
+$card_number = $_POST["card_number"];
+$card_address = $_POST["card_address"];
+$card_street_address = $_POST["card_street_address"];
+$card_city = $_POST["card_city"];
+$card_region = $_POST["card_region"];
+$card_country = $_POST["card_country"];
+$card_postalcode = $_POST["card_postalcode"];
+$card_expMonth = $_POST["card_expMonth"];
+$card_expYear = $_POST["card_expYear"];
+$card_cvc = $_POST["card_cvc"];
+$context 
+
+
+$array = [
+  "amount" => "10.55",
+  "currency" => "USD",
+  "card" => [
+      "name" => "emulate=0",
+      "number" => "4111111111111111",
+      "address" => [
+        "streetAddress" => "1130 Kifer Rd",
+        "city" => "Sunnyvale",
+        "region" => "CA",
+        "country" => "US",
+        "postalCode" => "94086"
+      ],
+      "expMonth" => "02",
+      "expYear" => "2020",
+      "cvc" => "123"
+  ],
+  "context" => [
+    "mobile" => "false",
+    "isEcommerce" => "true"
+  ]
+];
+$charge = ChargeOperations::buildFrom($array);
+$response = $client->charge($charge);
+
+if($response->failed()){
+    $code = $response->getStatusCode();
+    $errorMessage = $response->getBody();
+    echo "code is $code \n";
+    echo "body is $errorMessage \n";
+}else{
+    $responseCharge = $response->getBody();
+    //Get the Id of the charge request
+    $id = $responseCharge->id;
+    //Get the Status of the charge request
+    $status = $responseCharge->status;
+    echo "Id is " . $id . "\n";
+    echo "status is " . $status . "\n";https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-373acb5f10be42e0a1e03b3519760a08c5ecdd92e12b47ee890e90e85b3f1a89a1f7511c8de94cde92553f0f15a5e4fa?locale=EN_US}

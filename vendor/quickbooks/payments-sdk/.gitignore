@@ -1,0 +1,11 @@
+# Ignore Mac system files
+.DS_store
+.lock
+.phpunit.result.cache
+.idea
+# Ignore all text files
+*.txt
+
+# Composer
+/vendor/
+
