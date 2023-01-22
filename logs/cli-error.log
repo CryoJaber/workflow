@@ -1,0 +1,40 @@
+2023-01-22 05:22:22 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2023-01-22 05:22:28 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2023-01-22 05:22:38 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2023-01-22 05:22:49 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2023-01-22 05:34:42 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2023-01-22 05:34:42 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1698] Access denied for user 'my_app'@'localhost' in /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1698] Access denied for user \'my_app\'@\'localhost\'',
+)
+Stack Trace:
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:164
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:216
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Connection.php:418
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/bake/src/Command/ModelCommand.php:87
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/bake/src/Command/AllCommand.php:115
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/jessie/Projects/Frostware/workflow/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [1698] Access denied for user 'my_app'@'localhost' in /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver.php on line 125
+Stack Trace:
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver.php:125
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver.php:131
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:164
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:216
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Database/Connection.php:418
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/bake/src/Command/ModelCommand.php:87
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/bake/src/Command/AllCommand.php:115
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/jessie/Projects/Frostware/workflow/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/jessie/Projects/Frostware/workflow/bin/cake.php:12
+

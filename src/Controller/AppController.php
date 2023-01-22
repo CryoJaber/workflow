@@ -28,6 +28,18 @@ use Cake\Controller\Controller;
  */
 class AppController extends Controller
 {
+    // in src/Controller/AppController.php
+    public function beforeFilter(\Cake\Event\EventInterface $event)
+    {
+        parent::beforeFilter($event);
+       // for all controllers in our application, make index and view
+       // actions public, skipping the authentication check
+       $this->Authentication->addUnauthenticatedActions(['index', 'view']);
+    }
+
+
+
+
     /**
      * Initialization hook method.
      *
@@ -43,7 +55,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-
+	$this->loadComponent('Authentication.Authentication');
         /*
          * Enable the following component for recommended CakePHP form protection settings.
          * see https://book.cakephp.org/4/en/controllers/components/form-protection.html
