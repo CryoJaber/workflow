@@ -19,7 +19,7 @@ class PagesFixture extends TestFixture
     {
         $this->records = [
             [
-                'page_name' => '4e7de667-ff03-4683-9236-100214897df2',
+                'page_name' => 'a4ca509e-d185-4a64-bcdb-e1062a9d552d',
                 'controller_name' => 'Lorem ip',
                 'roles' => 'Lorem ipsu',
             ],
